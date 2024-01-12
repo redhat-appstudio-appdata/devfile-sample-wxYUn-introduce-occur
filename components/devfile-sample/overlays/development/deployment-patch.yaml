@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/haoran-openshift-tenant/devfile-sample/devfile-sample@sha256:45f9cded0da095e0c66df59fd27e06f06448a16612ac13888c0f3c6313f7e01a
+        name: my-nodejs
+        resources: {}
+status: {}
